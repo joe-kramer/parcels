@@ -12,11 +12,11 @@ class Parcel {
     mWeight = weight;
   }
 
-  public void volume(int width, int height, int length) {
-    mVolume = width * height * length;
+  public void volume() {
+    mVolume = mWidth * mHeight * mLength;
   }
 
-  public float costToShip() {
-    return ((mVolume * .1) * weight);
+  public int costToShip() {
+    return ((mVolume * 2) * mWeight);
   }
 }

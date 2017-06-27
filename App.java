@@ -19,6 +19,8 @@ class App {
       userParcel.volume();
 
       System.out.println("Your shipping cost is: " + userParcel.costToShip());
+
+      running = false;
     }
   }
 }
