@@ -17,6 +17,6 @@ class Parcel {
   }
 
   public float costToShip() {
-    return (mVolume * .1);
+    return ((mVolume * .1) * weight);
   }
 }

@@ -14,9 +14,11 @@ class App {
       int userLength = Integer.parseInt(myConsole.readLine());
       System.out.println("Weight:");
       int userWeight = Integer.parseInt(myConsole.readLine());
-
-
       Parcel userParcel = new Parcel(userWidth, userHeight, userLength, userWeight);
+
+      userParcel.volume();
+
+      System.out.println("Your shipping cost is: " + userParcel.costToShip());
     }
   }
 }
